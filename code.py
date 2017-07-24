@@ -26,7 +26,7 @@ def print_top_10(f):
 	words_freq = [(words.count(word), word) for word in set(words) if len(word) > 6]
 	words_freq.sort(reverse=True)
 	for word_freq in words_freq[:10]:
-		print(word[1])
+		print(word_freq[1])
 	print()
 
 
