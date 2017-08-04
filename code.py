@@ -8,8 +8,8 @@ def json_file_to_python_obj(f):
         result = chardet.detect(data)
         s = data.decode(result['encoding'])
 
-    py_data = json.loads(s)
-    return py_data
+    py = json.loads(s)
+    return py
 
 
 def print_top_10(f):
